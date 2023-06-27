@@ -1,0 +1,20 @@
+.parent-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+h1{
+    color: var(--primary-text-color);
+    font-size: 3rem;
+}
+
+#phonetic{
+    margin-top: 4px;
+    color: var(--purple);
+}
+
+#playButton{
+    cursor: pointer;
+}

@@ -1,0 +1,101 @@
+.parent-div {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 32px;
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.search-div {
+    position: relative;
+    border-radius: 8px;
+    background-color: var(--search-background);
+    box-sizing: border-box;
+    margin-top: 32px;
+    color: var(--primary-text-color);
+    padding: 10px 20px;
+    display: flex;
+}
+
+.search-div input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    color: var(--primary-text-color);
+}
+
+.search-div:focus-within{
+    border: 1px solid var(--purple);
+}
+
+.search-div.error{
+    border: 1px solid var(--red);
+}
+
+.search-div #searchIcon{
+    cursor: pointer;
+}
+
+#invalidText{
+    color: var(--red);
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+
+.source-div {
+    margin-top: 16px;
+    padding-bottom: 5%;
+    font-size: 0.8rem;
+}
+
+.source-div span {
+    color: var(--secondary-text-color);
+    text-decoration: underline;
+}
+
+.source-div a {
+    color: var(--primary-text-color);
+    margin-left: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.source-div img{
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.no-result-div{
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 10%;
+}
+
+.no-result-div p{
+    margin-top: 16px;
+}
+
+.no-result-emoji{
+    font-size: 3rem;
+}
+
+.no-result-primaryText{
+    font-weight: 700;
+}
+
+.no-result-secondaryText{
+    font-size: 0.8rem;
+    color: var(--secondary-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .parent-div {
+        padding: 60px 25%;
+    }
+}

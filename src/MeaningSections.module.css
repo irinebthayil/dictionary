@@ -1,0 +1,62 @@
+.parent-div {
+    margin-top: 32px;
+}
+
+.type-div{
+    display: flex;
+    align-items: center;
+}
+
+.type-div h4{
+    color: var(--primary-text-color);
+    font-style: var(--font-style);
+}
+
+.type-div span{
+    width: 100%;
+    height: 0.5px;
+    background-color: #979797;
+    opacity: 0.3;
+    margin-left: 10px;
+}
+
+.meaning-div{
+    margin-top: 20px;
+}
+
+.meaning-div p, #synonymHeading{
+    color: var(--secondary-text-color);
+}
+
+.meaning-div ul{
+    color: var(--primary-text-color);
+    margin-top: 12px;
+    margin-left: 28px;
+    list-style: none;
+}
+
+.meaning-div ul li {
+    margin-top: 16px;
+}
+
+.meaning-div ul li::before {
+    content: "\2022";
+    color: var(--purple);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.synonyms-div{
+    margin-top: 20px;
+}
+
+#synonymText{
+    color: var(--purple);
+    margin-left: 16px;
+    font-weight: 700;
+}
+
+#examplePara{
+    margin-top: 6px;
+}

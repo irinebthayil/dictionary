@@ -1,0 +1,136 @@
+.parent-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options-div {
+  display: flex;
+  align-items: center;
+}
+
+.select-container {
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 120px;
+}
+
+.select-container .select {
+  margin-right: 16px;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.option-container {
+  position: absolute;
+  width: 100px;
+  top: 28px;
+  left: -20px;
+  z-index: 99;
+  border-radius: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--drop-down-background);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--drop-down-box-shadow);
+}
+
+.option-container .option {
+  cursor: pointer;
+}
+
+.option-container .option:hover {
+  color: var(--purple);
+}
+
+.sans-serif {
+  font-family: 'Inter', sans-serif;
+}
+
+.serif {
+  font-family: 'Lora', serif;
+}
+
+.mono {
+  font-family: 'Inconsolata', monospace;
+}
+
+.options-div-two {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 16px;
+  border-left: 1px solid var(--divider-color);
+
+}
+
+.options-div-two img {
+  filter: var(--svg-filter)
+}
+
+/* custom slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--secondary-text-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: var(--purple);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px var(--purple);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(26px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* custom slider */

@@ -86,6 +86,7 @@
 }
 
 .no-result-primaryText{
+    color: var(--primary-text-color);
     font-weight: 700;
 }
 
